@@ -3,8 +3,7 @@
 import { expect, it } from "vitest";
 import { z } from "zod";
 
-const StarWarsPerson = z
-  .object({
+const StarWarsPerson = z .object({
     name: z.string(),
   })
   .transform((person) => ({
